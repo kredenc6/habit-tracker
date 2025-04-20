@@ -7,7 +7,9 @@ import {
   signOut 
 } from 'firebase/auth';
 
-const apiKey = import.meta.env.REACT_APP_API_KEY;
+const apiKey = import.meta.env.VITE_FIREBASE_CONFIG_API_KEY;
+console.log("apiKey:", apiKey);
+// const apiKey = getEnv ("FIREBASE_CONFIG_API_KEY");
 const firebaseConfig = {
   apiKey,
   authDomain: "habit-tracker-4d7b7.firebaseapp.com",

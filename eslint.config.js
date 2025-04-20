@@ -28,6 +28,14 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-    },
+    }
   },
+  { 
+    overrides: [{
+      files: ["netlify/functions/**/*.js"], // turn on NodeJS environment for the Netlify functions
+      env: {
+        node: true
+      }
+    }]
+  }
 ]
